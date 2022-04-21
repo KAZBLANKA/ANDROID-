@@ -20,7 +20,7 @@ bttn = InlineKeyboardMarkup(
 
 
 bcl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🗑 حذف", callback_data="cls")]]
+    [[InlineKeyboardButton("<<حذف>>", callback_data="cls")]]
 )
 
 
@@ -46,10 +46,10 @@ async def skip(client, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="• القائمه", callback_data="cbmenu"
+                    text="<<القائمه>>", callback_data="cbmenu"
                 ),
                 InlineKeyboardButton(
-                    text="• حذف", callback_data="cls"
+                    text=" <<حذف>>", callback_data="cls"
                 ),
             ]
         ]
@@ -107,7 +107,7 @@ async def stop(client, m: Message):
 
 
 @Client.on_message(
-    command(["/pause", f"/pause@{BOT_USERNAME}", "/vpause", "استني"]) & other_filters
+    command(["/pause", f"/pause@{BOT_USERNAME}", "/vpause", "اسكت"]) & other_filters
 )
 @authorized_users_only
 async def pause(client, m: Message):
