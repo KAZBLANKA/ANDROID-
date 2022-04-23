@@ -60,7 +60,7 @@ async def start_(client: Client, message: Message):
 
 **╢ • اضفني مشرف واكتب (انضم)**
 
-**╜ • الحساب المساعد @{ ASSISTANT_NAME}**
+**╜ • الحساب المساعد @{ASSISTANT_NAME}**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
