@@ -39,10 +39,10 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "- TWS ROOM -", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "<<جروب الدعم>>", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "- CH MUSIC -", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "SOURCE 🚨", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
@@ -90,10 +90,10 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 اوامر الادمنيه", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 اوامر المطور", callback_data="cbsudo"),
+                    InlineKeyboardButton("<<اوامر الادمنيه>>", callback_data="cbadmin"),
+                    InlineKeyboardButton("<< اوامر المطور>>", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 الاوامر الاساسيه", callback_data="cbbasic")
+                    InlineKeyboardButton("<< الاوامر الاساسيه>>", callback_data="cbbasic")
                 ],[
                     InlineKeyboardButton("🔙 الرجوع", callback_data="cbstart")
                 ],
