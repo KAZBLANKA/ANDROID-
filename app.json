@@ -1,16 +1,16 @@
 {
     "name": "Video x Music fire Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/fa0abbdfcfe3936c6a818.jpg",
+    "logo": "https://telegra.ph/file/0b434e20dc40345d28f77.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/CH_SUR",
+    "website": "https://t.me/SH_YC",
     "repository": "https://github.com/Not102/nice",
-    "success_url": "https://t.me/Q_o_ll",
+    "success_url": "https://t.me/U_Androld",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
@@ -60,7 +60,7 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "CH_SUR"
+            "value": "SH_YC "
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
