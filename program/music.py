@@ -46,8 +46,8 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• القائمه", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• حذف", callback_data="cls"),
+                InlineKeyboardButton(text="<< القائمه>>", callback_data="cbmenu"),
+                InlineKeyboardButton(text="<<حذف>>", callback_data="cls"),
             ]
         ]
     )
@@ -132,7 +132,7 @@ async def play(c: Client, m: Message):
                 )
             else:
              try:
-                await suhu.edit("🔄 **جاري التحميل قليلا**")
+                await suhu.edit("**ويت يحب💞**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioPiped(
@@ -145,7 +145,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"💡 **تم التشغيل يقلبي 🙂💛.**\n\n🏷 **اسم:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
+                    caption=f"**تم التشغيل يقلي💗... **\n\n🏷 **اسم:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -157,7 +157,7 @@ async def play(c: Client, m: Message):
                     "» الرد علي **ملف صوتي** او **إعطاء شيء للبحث.**"
                 )
             else:
-                suhu = await c.send_message(chat_id, "🔍 **جاري البحث**")
+                suhu = await c.send_message(chat_id, " **جاري البحث يحب💕**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -185,7 +185,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **تم التشغيل 💕**")
+                                await suhu.edit(" **تم التشغيل يقلبي💕... **")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -198,7 +198,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=thumbnail,
-                                    caption=f"💡 **تم التشغيل يقلبي 🙂💛.**\n\n🏷 **Name:** [{songname}]({url})\n**⏱ الوقت:** `{duration}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
+                                    caption=f" **تم التشغيل يقلبي 💕... **\n\n🏷 **Name:** [{songname}]({url})\n**⏱ الوقت:** `{duration}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -211,7 +211,7 @@ async def play(c: Client, m: Message):
                 "» الرد علي **ملف صوتي** او **إعطاء شيء للبحث.**"
             )
         else:
-            suhu = await c.send_message(chat_id, "🔍 **جاري البحث**")
+            suhu = await c.send_message(chat_id, " **جاري البحث يحب💞**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -239,7 +239,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **تم التشغيل 💕...**")
+                            await suhu.edit(" **تم التشغيل يقلبي 💕...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
@@ -252,7 +252,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=thumbnail,
-                                caption=f"💡 **تم التشغيل يقلبي 🙂💛.**\n\n🏷 **اسم:** [{songname}]({url})\n**⏱ الوقت:** `{duration}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
+                                caption=f" **تم التشغيل يقلبي💕...**\n\n🏷 **اسم:** [{songname}]({url})\n**⏱ الوقت:** `{duration}`\n💡 **حالة:** `يلعب`\n🎧 **مطلوبه بواسطة:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
