@@ -76,15 +76,15 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "- TWS ROOM -", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "<<جروب الدعم>>", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "- CH MUSIC -", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "SOURCE 🚨", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "- 𝖡𝖠𝖭𝖣𝖠 -", url="https://t.me/Q_o_ll"
+                        "𝘼 𝙉 𝘿 𝙍 𝙊 𝙄 𝘿 ¦ اندرويد ", url="https://t.me/U_Androld"
                     )
                 ],
             ]
@@ -190,8 +190,9 @@ async def new_chat(c: Client, m: Message):
                             InlineKeyboardButton("SOURCE 🚨", url=f"https://t.me/UU_and_rold"),
                             InlineKeyboardButton("𝘼 𝙉 𝘿 𝙍 𝙊 𝙄 𝘿 ¦ اندرويد ", url=f"https://t.me/U_Androld")
                         ],
-                        [
-                            InlineKeyboardButton("- HELP -", url=f"https://t.me/{ass_uname}")
+
+                          [       
+                            InlineKeyboardButton("<<HELP>>", url=f"https://t.me/{ass_uname}")
                         ]
                     ]
                 )
