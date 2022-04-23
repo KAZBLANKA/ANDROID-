@@ -53,25 +53,26 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""**
-𝐖𝐞𝐥𝐜𝐨𝐦 𝐓𝐨 𝐦𝐮𝐬𝐢𝐜 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞
-ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ
-〉 ♬ 𝐝𝐞𝐯 𝐦𝐮𝐬𝐢𝐜 : [⌯ ٰ 𝑭.𝑨~𝑩𝑨𝑵𝑫𝑨 ‌‌‏𝙓⃟🇫🇷](https://t.me/Q_o_ll)
-〉 ♬ 𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞 : [𝐦𝐮𝐬𝐢𝐜 𝐟𝐢𝐫𝐞](https://t.me/CH_SUR)
-〉 ♬ 𝐓𝐖𝐒𝐎𝐋 : [𝐆𝐑𝐎𝐔𝐏 𝐓𝐖𝐒](t.me/Q_b_2l)⦒
- ꔹ━━ꔹ━ꔹ━━ꔹꔹ━━ꔹ━ꔹ━━ꔹ**""",
+        f"""**╖ • مرحبا بك في سورس اندرويد**
+
+**╢ • لتشغيل الموسيقي في المحادثات الصوتيه**
+
+**╢ • اضفني مشرف واكتب (انضم)**
+
+**╜ • الحساب المساعد @{ ASSISTANT_NAME}**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "اضغط لـ اضافتي لمجموعتك ➕",
+                        "أضف لبوت لمجموعتك ✅",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("- طريقة التفعيل -", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("<<طريقة التفعيل>>", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("- الاوامر -", callback_data="cbcmds"),
-                    InlineKeyboardButton("- المطور -", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("<<الاوامر >>", callback_data="cbcmds"),
+                    InlineKeyboardButton("<<المطور >>", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -101,9 +102,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("- 𝖡𝖠𝖭𝖣𝖠 -", url=f"https://t.me/Q_o_ll"),
+                InlineKeyboardButton("𝘼 𝙉 𝘿 𝙍 𝙊 𝙄 𝘿 ¦ اندرويد ", url=f"https://t.me/U_Androld"),
                 InlineKeyboardButton(
-                    "- CH MUSIC -", url=f"https://t.me/CH_SUR"
+                    "SOURCE 🚨", url=f"https://t.me/UU_and_rold"
                 ),
             ]
         ]
@@ -126,9 +127,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("- 𝖡𝖠𝖭𝖣𝖠 -", url=f"https://t.me/Q_o_ll"),
+                InlineKeyboardButton("SOURCE ", url=f"https://t.me/Q_o_ll"),
                 InlineKeyboardButton(
-                    "- CH MUSIC -", url=f"https://t.me/CH_SUR"
+                    "SOURCE 🚨", url=f"https://t.me/UU_and_rold"
                 ),
             ]
         ]
@@ -186,8 +187,8 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("- CH MUSIC -", url=f"https://t.me/CH_SUR"),
-                            InlineKeyboardButton("- 𝖡𝖠𝖭𝖣𝖠 -", url=f"https://t.me/Q_o_ll")
+                            InlineKeyboardButton("SOURCE 🚨", url=f"https://t.me/UU_and_rold"),
+                            InlineKeyboardButton("𝘼 𝙉 𝘿 𝙍 𝙊 𝙄 𝘿 ¦ اندرويد ", url=f"https://t.me/U_Androld")
                         ],
                         [
                             InlineKeyboardButton("- HELP -", url=f"https://t.me/{ass_uname}")
