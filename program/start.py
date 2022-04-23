@@ -8,6 +8,7 @@ from config import (
     BOT_NAME,
     BOT_USERNAME,
     GROUP_SUPPORT,
+    ASSISTANT_NAME, 
     OWNER_NAME,
     UPDATES_CHANNEL,
 )
